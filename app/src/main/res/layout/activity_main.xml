@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/linear_no_connection_available"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_no_connection_available"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/internet_not_connect_tex"
+            android:gravity="center"
+            android:textSize="@dimen/text_20" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Retry_to_connect"
+            android:layout_marginTop="@dimen/dimen_5"/>
+        <Button
+            android:id="@+id/error_page_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Retry_button_text"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/dimen_40"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_connection_available"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/white">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_connection_availalable"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connection_avail"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:textSize="@dimen/text_20"/>
+
+    </LinearLayout>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnExplicitBroadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicit Broadcast" />
+
+</RelativeLayout>

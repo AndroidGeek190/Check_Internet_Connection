@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Check Internet Connection</string>
+    <string name="internet_not_connect_tex">Network unavailable!!!!</string>
+    <string name="Retry_to_connect">Please try again</string>
+    <string name="Retry_button_text">Try again</string>
+    <string name="connection_avail">WiFi/Mobile Networks Connected!</string>
+</resources>
